@@ -125,6 +125,7 @@ body.user {
     line-height: 20px;
 }
 
+.search-input:hover,
 .search-input:focus {
     border: 1px solid #5ec7f8;
 }
@@ -302,4 +303,78 @@ body.user {
     border-radius: 4px;
     line-height: 20px;
     box-shadow: 1px 1px 0px 1px rgb(243, 243, 243);
+}
+
+.jb-msg:before {
+    content: '基本信息';
+}
+
+.up-a {
+    display: inline-block;
+    transition: 0s;
+}
+
+.up-a:hover {
+    transition: auto;
+}
+
+.up-a>img {
+    width: 80px;
+    height: 80px;
+}
+
+.btn {
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+    outline: none;
+    height: 25px;
+    color: rgb(54, 54, 54);
+}
+
+.btn:hover {
+    box-shadow: 1px 1px #e2e2e2;
+}
+
+.btn-xs {
+    font-size: 10px;
+}
+
+.umsg {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.in:not(:first-child) {
+    margin-top: 5px;
+}
+
+.in>.in-put[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 2px;
+    outline: none;
+}
+
+.in>.in-put[type="text"]:hover,
+.in>.in-put[type="text"]:focus {
+    border: 1px solid #5ec7f8;
+}
+
+.in>.in-title:after {
+    content: ':';
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(233, 233, 233);
+    border-radius: 4px;
 }
