@@ -86,6 +86,8 @@ body.user {
 }
 
 .tab-item {
+    text-decoration: none;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     height: 50px;
@@ -118,27 +120,40 @@ body.user {
 
 .search {
     display: inline-block;
-    border: 1px solid #eae4e4;
     border-radius: 8px;
     height: 25px;
-    width: 120px;
-    line-height: 25px;
+    line-height: 20px;
+}
+
+.search-input:focus {
+    border: 1px solid #5ec7f8;
 }
 
 .search-input {
-    border: 0;
+    display: inline-block;
+    border: 1px solid #eae4e4;
+    border-radius: 8px;
+    height: 25px;
+    line-height: 25px;
     outline: none;
     padding-left: 4px;
-    width: 80px;
+    padding-right: 30px;
+    width: 85px;
 }
 
 .search-btn {
     border: 0;
     outline: none;
     background: #fff;
-    width: 20px;
-    height: 25px;
+    width: 25px;
     cursor: pointer;
+    position: relative;
+    left: -40px;
+    top: 2px;
+}
+
+.search-btn>i {
+    font-size: 18px;
 }
 
 .box:before {
@@ -175,7 +190,7 @@ body.user {
     font-size: 12px;
 }
 
-.list-item:not(:first-child) {
+.list-item:not(:first-of-type) {
     border-top: 1px dashed #ccc;
     padding-top: 4px;
     margin-top: 20px;
@@ -209,4 +224,82 @@ body.user {
 
 .l-c img {
     max-width: 100%;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.my-fb {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.tz {
+    margin: 10px 0;
+}
+
+.tz-item {
+    padding: 10px 0;
+    border-top: 1px solid rgb(196, 196, 196);
+    line-height: 20px;
+}
+
+.tz-item>.tz-time {
+    width: 164px;
+    text-align: left;
+    float: right;
+}
+
+.tz-item>.tz-title,
+.tz-item>.tz-time {
+    margin-left: 4px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 65%;
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+}
+
+.tz-item>.tz-title:hover {
+    text-decoration: underline;
+}
+
+.tz-item>.tz-look {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 35px;
+    background: rgb(130, 233, 82);
+    float: left;
+}
+
+.msg {
+    margin: 20px 0;
+}
+
+.pages {
+    text-align: right;
+    width: 100%;
+    height: 24px;
+}
+
+.page-item {
+    cursor: pointer;
+    color: rgb(82, 82, 82);
+    font-size: 12px;
+    padding: 2px;
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid rgb(182, 182, 182);
+    background: rgb(243, 243, 243);
+    border-radius: 4px;
+    line-height: 20px;
+    box-shadow: 1px 1px 0px 1px rgb(243, 243, 243);
 }
