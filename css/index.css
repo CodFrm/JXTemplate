@@ -1,0 +1,100 @@
+body {
+    font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    margin: 0;
+    background: #fbfbfb;
+}
+
+.header {
+    min-width: 1240px;
+    height: 46px;
+    width: 100%;
+    background: #3e94d1dd;
+    line-height: 46px;
+}
+
+.header>.left {
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    width: 15%;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+}
+
+.title {
+    font: "微软雅黑";
+    color: #ffffff;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.nav {
+    height: 46px;
+    min-width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav>.nav-item {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    min-width: 50px;
+    padding: 0 16px;
+    text-align: center;
+    background: #58a2d7;
+    float: left;
+}
+
+.nav-item.active {
+    background: #3e94d1dd;
+}
+
+.nav>.nav-item:hover{
+    background: #3e94d1dd;
+}
+
+.nav>.right{
+    cursor: pointer;
+    height: 46px;
+    float: right;
+}
+.nav>div.right {
+    padding: 0;
+}
+.nav>div.right:hover .u-list{
+    display: block;
+}
+.user-avatar {
+    border-radius: 100%;
+}
+
+.min.user-avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.username {
+    font-size: 16px;
+}
+
+.text-top,
+.text-top::before {
+    vertical-align: top;
+}
+
+.nav>.right>.u-list{
+    display: none;
+    color: #000000;
+    box-shadow: 0px 0px 5px 0px #c7c7c7;
+    border-top: 0;
+    padding: 4px;
+    background: #ffffff;
+    position: absolute;
+    top: 46px;
+    cursor: auto;
+
+}
