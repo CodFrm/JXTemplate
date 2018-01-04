@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-    min-width: 1240px;
+    min-width: 1000px;
     height: 46px;
     width: 100%;
     background: #3e94d1dd;
@@ -33,13 +33,12 @@ body {
 
 .nav {
     height: 46px;
-    min-width: 60%;
+    min-width: 70%;
     display: inline-block;
     vertical-align: top;
 }
 
 .nav>.nav-item {
-    display: inline-block;
     text-decoration: none;
     color: #ffffff;
     min-width: 50px;
@@ -53,21 +52,24 @@ body {
     background: #3e94d1dd;
 }
 
-.nav>.nav-item:hover{
+.nav>.nav-item:hover {
     background: #3e94d1dd;
 }
 
-.nav>.right{
+.nav>.right {
     cursor: pointer;
     height: 46px;
     float: right;
 }
+
 .nav>div.right {
     padding: 0;
 }
-.nav>div.right:hover .u-list{
+
+.nav>div.right:hover .u-list {
     display: block;
 }
+
 .user-avatar {
     border-radius: 100%;
 }
@@ -86,7 +88,7 @@ body {
     vertical-align: top;
 }
 
-.nav>.right>.u-list{
+.nav>.right>.u-list {
     display: none;
     color: #000000;
     box-shadow: 0px 0px 5px 0px #c7c7c7;
@@ -95,6 +97,90 @@ body {
     background: #ffffff;
     position: absolute;
     top: 46px;
+    z-index: 100;
     cursor: auto;
+}
 
+.main {
+    margin: 0 auto;
+    margin-top: 20px;
+    min-width: 960px;
+    width: 90%;
+}
+
+.carousel {
+    border-radius: 4px;
+    width: 960px;
+    height: 350px;
+    background: #69a1e9;
+    overflow: hidden;
+    position: absolute;
+}
+
+.car-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 1.5s;
+    opacity: 0;
+}
+
+.carousel>.car-title {
+    position: absolute;
+    bottom: 0;
+    background: #00000050;
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+}
+
+.car-title>.car-page {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+.car-title>span {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 4px;
+}
+
+.car-page>.car-page-item {
+    cursor: pointer;
+    width: 45px;
+    height: 4px;
+    background: #ffffff;
+    float: left;
+    margin-left: 4px;
+}
+
+.car-item>.car-img {
+    width: 100%;
+    height: 100%;
+}
+
+.msgbox {
+    box-shadow: 0px 0px 4px 1px #57A1D6;
+    border-radius: 2px;
+    background: #ffffff;
+}
+
+.msgbox>.box-title {
+    width: 100%;
+    height: 35px;
+    box-shadow: 0px 1px 1px 0px #57A1D6;
+}
+
+.m-top>.right {
+    float: right;
+    width: calc(100% - 980px);
+    height: 350px;
+}
+
+.m-top {
+    width: 100%;
+    height: 350px;
 }

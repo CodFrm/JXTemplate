@@ -7,6 +7,8 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -34,8 +36,39 @@
         </div>
     </div>
     <div class="main">
+        <div class="m-top">
+            <div id="carousel" class="carousel">
+            </div>
+            <div class="user-msg right msgbox">
+                <div class="box-title">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            asasd
+        </div>
 
     </div>
 </body>
+<script>
+    $(function () {
+        var car = $('#carousel').carousel({
+            'images': [{
+                    'src': 'image/logo.jpg',
+                    'title': '标题'
+                },
+                {
+                    'src': 'image/default.png',
+                    'title': '王八蛋老板'
+                },
+                {
+                    'src': 'image/avatar.png',
+                    'title': 'emmmmm'
+                }
+            ]
+        });
+    });
+</script>
 
 </html>

@@ -10,3 +10,4 @@ $(function(){
     $('#tab-bar').css({left:$('.tab-item.active').position().left,width:$('.tab-item.active').width()});
     // $('.tab-item.active').css({color:'#22b9e7'});
 })
+
