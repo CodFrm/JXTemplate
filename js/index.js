@@ -58,7 +58,7 @@ $.fn.carousel = function (param) {
 /**
  * 页面弹出信息框
  */
-window.MessgeBox = {
+window.MessageBox = {
     prompt: function (msgStr) {
         var prompt = {},
             call = {};
