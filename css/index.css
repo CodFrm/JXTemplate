@@ -73,8 +73,8 @@ a {
     height: 46px;
 }
 
-.nav>div.right {
-    padding: 0;
+.nav>.nav-item.right {
+    padding: 0 8px;
     float: right;
 }
 
@@ -230,6 +230,7 @@ a {
 
 .user-msg>.username {
     font-weight: bold;
+    color: #000000;
 }
 
 .user>.user-msg {
@@ -262,7 +263,7 @@ a {
 }
 
 .mag-top {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 .box-h {
@@ -434,9 +435,9 @@ ul.article-list>li:hover {
 
 .message-box {
     position: fixed;
+    margin: 0 auto;
     top: 50%;
-    left: 50%;
-    margin-left: -250px;
+    left: 0;
     margin-top: -125px;
     width: 500px;
     height: 250px;
@@ -454,17 +455,24 @@ ul.article-list>li:hover {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    margin-left: -75px;
     margin-top: -20px;
     border-radius: 4px;
     background: rgb(212, 212, 212);
+    padding: 0px 6px;
     box-shadow: 0px 0px 0px 0px #3E94D1;
 }
 
 .message-box>.prompt-icon {
     float: left;
     margin: 0 8px;
+}
+
+.prompt-icon.iconfont.icon-success {
     color: #35D59C;
+}
+
+.prompt-icon.iconfont.icon-warning {
+    color: #ff1010;
 }
 
 .message-box>.message-header {
