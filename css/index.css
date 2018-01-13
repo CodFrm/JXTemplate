@@ -495,3 +495,118 @@ ul.article-list>li:hover {
 .message-header>.message-close:hover {
     color: #33CDC7;
 }
+
+.edit {
+    width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.edit .edit-title {
+    padding: 20px 10px;
+}
+
+.edit>.edit-title>.ipt-box {
+    margin: 0;
+    padding: 2px 6px;
+    width: 100px;
+    outline: none;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+.ipt-box option{
+    outline: none;
+    user-select: none;
+}
+.ipt-account.ipt-box[name=title] {
+    margin-left: 10px;
+    width: calc(100% - 116px);
+}
+
+.edit>.editor {
+    height: 720px;
+}
+
+.editor {
+    margin: 0 10px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px 1px #d6d6d6;
+    overflow: hidden;
+}
+
+.editor>.source-text,
+.editor>.mkdown {
+    float: left;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    resize: none;
+    width: 50%;
+    height: calc(100% - 30px);
+    box-sizing: border-box;
+    border-right: 1.4px solid #d6d6d6;
+    overflow-y: auto;
+}
+
+.source-text>.mktext {
+    float: left;
+    width: calc(100% - 20px);
+    height: 100%;
+    padding: 0 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.source-text>.line-number {
+    float: left;
+    width: 20px;
+    background: #f1f1f1;
+    height: 100%;
+}
+
+.editor>.mkdown {
+    border: 0;
+}
+
+.mktext {
+    font-family: "YaHei Consolas Hybrid", Consolas, "微软雅黑", "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, Monaco, courier, monospace;
+}
+
+.editor>.source-text::-webkit-scrollbar {
+    height: 10px;
+    width: 7px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.editor>.source-text::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.editor>.tools {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 4px 0 4px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.tools>.option {
+    color: #3a3a3a;
+    float: left;
+    height: 30px;
+    width: 30px;
+    border-right: 1px #c7c7c7;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.tools>.option:hover {
+    background: #ececec;
+}

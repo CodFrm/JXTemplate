@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/markdown.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="image/logo.jpg" class="logo">
+            <span class="title">信院小屋</span>
+        </div>
+        <div class="nav">
+            <a href="#" class="nav-item active">首页</a>
+            <a href="#" class="nav-item">板块</a>
+            <a href="#" class="nav-item">会员互动</a>
+            <a href="#" class="nav-item">资源分享</a>
+            <a href="#" class="nav-item">校内校外</a>
+            <a href="#" class="nav-item">失物招领</a>
+            <div class="right nav-item">
+                <img src="image/avatar.png" class="min user-avatar" style="padding:8px;">
+                <span class="title username">Farmer</span>
+                <i class="iconfont icon-xia text-top" style="color:#fff"></i>
+                <div class="u-list">
+                    <span>用户组:</span>
+                    <span>管理员</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <form id="edit" class="msgbox edit">
+            <div class="edit-title">
+                <select class="ipt-box ipt-account" name="area">
+                    <option value="1">
+                        测试分区
+                    </option>
+                    <option value="2">
+                        测试分区2
+                    </option>
+                    <option value="3">
+                        测试分区3
+                    </option>
+                </select>
+                <input type="text" class="ipt-box ipt-account" name="title">
+            </div>
+            <div class="editor">
+                <div class="tools">
+                    <span class="option iconfont icon-726bianjiqi_duanla"></span>
+                    <span class="option iconfont icon-bold"></span>
+                    <span class="option iconfont icon-italic"></span>
+                    <span class="option iconfont icon-image"></span>
+                    <span class="option iconfont icon-link"></span>
+                    <span class="option iconfont icon-quotation_marks"></span>
+                    <span class="option iconfont icon-richtextnumberedlist"></span>
+                    <span class="option iconfont icon-richtextbulletedlist"></span>
+                    <span class="option iconfont icon-insert_tag_field"></span>
+                </div>
+                <div class="source-text scrollbar">
+                    <div class="line-number">
+
+                    </div>
+                    <div class="mktext" contenteditable="true">
+                        阿擦拭的
+                        <br> ces
+                    </div>
+                </div>
+                <div class="mkdown">233</div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

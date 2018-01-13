@@ -41,6 +41,7 @@
     border: 0;
     box-shadow: 0px 0px 1px 0px #c7c7c7;
     box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .login-min.ipt>.ipt-account {
@@ -51,7 +52,10 @@
 .ipt-account:not(:first-child) {
     margin-top: 15px;
 }
-
+.ipt-account:hover,
+.ipt-account:focus{
+    box-shadow: 0px 0px 2px 0px #3e94d1;
+}
 .login-btn {
     margin: 0 auto;
     border-radius: 0;
