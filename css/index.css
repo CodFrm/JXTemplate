@@ -515,10 +515,7 @@ ul.article-list>li:hover {
     height: 24px;
     line-height: 24px;
 }
-.ipt-box option{
-    outline: none;
-    user-select: none;
-}
+
 .ipt-account.ipt-box[name=title] {
     margin-left: 10px;
     width: calc(100% - 116px);
