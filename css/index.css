@@ -655,14 +655,18 @@ a.un:hover {
     color: #3e94d1;
 }
 
-.c-list {
+.c-list,
+.reply {
     border: 1px solid #e9e9e9;
     padding: 0;
     box-sizing: border-box;
+    background: #fff;
 }
-.comment:not(:first-child){
+
+.comment:not(:first-child) {
     border-top: 8px solid #e9e9e9;
 }
+
 .comment {
     overflow: hidden;
     display: table;
@@ -673,7 +677,6 @@ a.un:hover {
     width: 160px;
     background: #f8f8f8;
 }
-
 
 .comment>.u,
 .comment>.cnt {
@@ -792,11 +795,53 @@ a.un:hover {
     border-top: 1px solid #e6e6e6;
 }
 
-.cnt >.spk{
+.cnt>.spk {
     padding: 4px;
     padding-bottom: 15px;
 }
 
-.reply{
-    border: 1px solid #000000;
+.pages {
+    margin: 20px 0;
+}
+
+.reply {
+    height: 200px;
+}
+
+.reply .avatar {
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.reply-box {
+    margin-top: 10px;
+    margin-left: 14px;
+    display: inline-block;
+    width: calc(100% - 130px);
+    height: 140px;
+    box-shadow: 0px 0px 1px 1px #69a1e9;
+    border-radius: 8px;
+}
+
+.reply-box::before {
+    content: ' ';
+    background: #ffffff;
+    position: relative;
+    float: left;
+    left: -7px;
+    top: 16px;
+    z-index: 1;
+    display: block;
+    width: 15px;
+    height: 15px;   
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 0px #69a1e9;
+    transform: rotate(135deg);
+}
+.act .ht{
+    margin: 8px 16px;
+    height: 30px;
+    width: 60px;
 }
